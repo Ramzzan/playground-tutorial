@@ -35,12 +35,12 @@ print(dog.name) //hound
 print(cat.name) //hound
 
 
-func chnageType(type: Animal){
+func changeType(type: Animal){
     type.name = "brid"
 }
 
 
-chnageType(type: cat)
+changeType(type: cat)
 
 print(dog.name) //brid
 print(cat.name) //brid

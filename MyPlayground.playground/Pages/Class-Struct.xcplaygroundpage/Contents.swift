@@ -12,7 +12,7 @@ Since they are reference type objects, they are pointing to the same memory addr
 If we change one of their property, other one will be affected as well because they are pointing to the same address. Let’s take a look below.
 **/
 
-class Animle {
+class Animal {
     
     var name: String
     
@@ -23,7 +23,7 @@ class Animle {
 
 
 
-var dog = Animle(name: "dog")
+var dog = Animal(name: "dog")
 var cat = dog
 
 print(dog.name) //dog
@@ -35,7 +35,7 @@ print(dog.name) //hound
 print(cat.name) //hound
 
 
-func chnageType(type: Animle){
+func chnageType(type: Animal){
     type.name = "brid"
 }
 

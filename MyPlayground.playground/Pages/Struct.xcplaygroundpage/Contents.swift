@@ -14,8 +14,6 @@ struct Animal {
     }
 }
 
-
-
 var dog = Animal(name: "dog")
 var cat = dog
 

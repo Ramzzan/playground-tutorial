@@ -19,7 +19,7 @@ var directionToHead = CompassPoint.west
 print(Planet.mars) // mars
 
 
-// enum value Strig
+// enum value string
 
 enum UserAction: String {
     case Add = "Add"

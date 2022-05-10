@@ -5,5 +5,7 @@
         <page name='escaping'/>
         <page name='List-Filter'/>
         <page name='Class'/>
+        <page name='typealias'/>
+        <page name='Enum'/>
     </pages>
 </playground>

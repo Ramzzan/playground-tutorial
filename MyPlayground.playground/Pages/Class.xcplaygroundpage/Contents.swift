@@ -1,3 +1,4 @@
+import Darwin
 class Animal {
     
     var name: String
@@ -19,3 +20,12 @@ cat.name = "hound"
 
 print(dog.name) //hound
 print(cat.name) //hound
+
+
+func evenOrOdd(_ number:Int) -> String {
+
+  return number % 2 == 0 ? "Even" : "Odd"
+}
+
+
+evenOrOdd(2)

@@ -30,9 +30,9 @@ print(userList.count)
 
 let userFilter = userList.filter {
     $0.userId == 2
-}.first
+}
 
-print(userFilter?.fullname ?? "")
+print(userFilter.first?.fullname ?? "")
 
 
 

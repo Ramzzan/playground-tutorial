@@ -1,4 +1,7 @@
 import Darwin
+import Foundation
+import UIKit
+
 class Animal {
     
     var name: String
@@ -27,5 +30,10 @@ func evenOrOdd(_ number:Int) -> String {
   return number % 2 == 0 ? "Even" : "Odd"
 }
 
-
 evenOrOdd(2)
+
+
+
+
+//--------------------
+

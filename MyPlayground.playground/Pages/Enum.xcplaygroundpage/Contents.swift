@@ -28,7 +28,9 @@ enum UserAction: String {
     case View = "View"
 }
 
+
 print(UserAction.Add) // Add
+
 
 // enum value Int
 
@@ -39,21 +41,4 @@ enum SystemVersion: Int {
 
 
 print(SystemVersion.v20) // Add
-
-// rowValue  Int / String / Double / None
-enum Direction: Int {
-  case north, south = 2, east = 3, west = 4
-}
-
-
-let data = Direction.east.rawValue
-
-print("Direction: \(data)")
-
-
-typealias Thing = [String:Any]
-var stuff: Thing
-print(type(of: stuff))
-
-
 

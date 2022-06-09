@@ -1,8 +1,7 @@
 
 import Foundation
 
-//------------ Without Using Result -----------
-
+// without result type
 func division(num1: Int, num2: Int)-> Int? {
     
     guard num2 != 0 else {
@@ -21,36 +20,19 @@ if result != nil {
 }
 
 
-//------------ Solution by Using Result -----------
+
+//---------------------------------------------------------------------
+
+//with result type
 
 
-enum MathsError: Error {
-    case divistorIsZero, unknow
+
+
+func getUsers(complation: @escaping ()-> Void) {
+    
+    complation()
 }
 
-func divisionResult(num1: Int, num2:Int) -> Result<Int, MathsError> {
-    
-    guard num2 != 0 else {
-        return .failure(MathsError.divistorIsZero)
-    }
-
-    let result = num1 / num2
-    return .success(result)
+getUsers {
+    <#code#>
 }
-
-
-let resultDivison = divisionResult(num1: 10, num2: 2)
-
-switch resultDivison {
-    
-case .success(let answer):
-    print("answer : \(answer)")
-    
-case .failure(MathsError.divistorIsZero):
-    print("Erro the divisor cannot be 0")
-
-case .failure(MathsError.unknow):
-    print("please sure your input numbers")
-}
-
-//------------ Using Result in Asynchronous Method -----------
